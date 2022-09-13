@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+:root {
+    --main-color: #FFC15E;
+    --bg: #1F1300;
+    --nav-text: #352D39;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    transition: .2s linear;
+    text-transform: capitalize;
+    text-decoration: none;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+body {
+    background: var(--bg);
+}
+
+.icons  {
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: var(--nav-text);
+    display: flex;
+    justify-content: end;
+    padding: 1.7rem;
+    gap: 1rem;
+    
+
+}
+
+header {
+    background: var(--main-color);
+    height: 30rem;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -5.5rem;
+}
+
+a.logo {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 7rem;
+    color: var(--nav-text);
+    margin-top: 6rem;
+}
+
+h1 {
+    font-family: 'Homemade Apple', cursive;
+    color: var(--nav-text);
+    text-transform: none;
+    font-size: 3rem;
+    margin-top: -6rem;
+    margin-left: -10rem;
+    /* /* border-bottom: -1rem solid var(--nav-text);  */
+
+}
+
+nav {
+    margin-top: 4rem;
+}
+
+nav a,
+nav span{
+    color: var(--nav-text);
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+nav a:hover {
+    border-bottom: .1rem solid var(--bg);
+    padding-bottom: .05em;
+}
+
+.grid {
+    display: grid;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "img1 text1 text1"
+    "text2 text2 img2"
+    "img3 text3 text3"; 
+    align-items: center;
+}  
+
+img {
+    margin: 5rem;
+    width: 50rem;
+}
+
+.img1 { 
+    grid-area: img1; 
+    
+}
+.img2 { 
+    grid-area: img2; 
+}
+.img3 {
+    grid-area: img3; 
+}
+.text1 {
+    grid-area: text1;
+    margin-right: 5rem; 
+}
+.text2 {
+    grid-area: text2;
+    margin-left: 5rem; 
+}
+.text3 {
+    grid-area: text3; 
+    margin-right: 5rem
+}
+
+p {
+    font-size: 3rem;
+    color: var(--main-color)
+}
+
